@@ -3,6 +3,5 @@ pandas
 matplotlib
 scikit-learn
 streamlit
-joblib
-pip==23.3.2
 pickle
+pip==23.3.2
