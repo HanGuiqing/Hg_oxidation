@@ -12,7 +12,6 @@ import numpy as np
 MODEL_PATH = 'model.pkl'
 # 载入预先训练好的模型
 model =  joblib.load(MODEL_PATH)
-# model = joblib.load(open('model.sav','rb'))
 # 定义一个函数来处理输入并进行预测
 def predict_properties(input_features):
     T = input_features['Temperature']
@@ -35,7 +34,6 @@ def predict_properties(input_features):
     # 5. 使用模型进行预测
     prediction = model.predict(x)
     return prediction
-#%%
 # 使用 CSS 来自定义 Streamlit 应用的样式
 st.markdown(f"""
     <style>
@@ -57,7 +55,7 @@ st.markdown(f"""
     </style>
     """, unsafe_allow_html=True)
 
-#%%
+
 st.markdown('<h1 class="big-font">Prediction of gaseous compositions producted from liquefaction of biomass</h1>', unsafe_allow_html=True)
 
 
