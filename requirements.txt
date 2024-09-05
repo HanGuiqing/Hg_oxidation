@@ -4,4 +4,4 @@ matplotlib
 scikit-learn
 streamlit
 pickle
-pip==23.3.2
+pip==24.1.1
