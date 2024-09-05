@@ -3,5 +3,5 @@ pandas
 matplotlib
 scikit-learn
 streamlit
-pickle
+joblib
 pip==24.1.1
