@@ -4,4 +4,4 @@ matplotlib
 scikit-learn
 streamlit
 joblib
-pip==24.1.1
+pip==23.3.2
