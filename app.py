@@ -9,10 +9,10 @@ import pickle
 import numpy as np
 
 # 请确保model.sav的路径与实际路径相匹配
-MODEL_PATH = 'model.sav'
+# MODEL_PATH = 'model.sav'
 # 载入预先训练好的模型
-model =  pickle.load(MODEL_PATH)
-
+# model =  pickle.load(MODEL_PATH)
+model = pickle.load(open('model.sav','rb'))
 # 定义一个函数来处理输入并进行预测
 def predict_properties(input_features):
     T = input_features['Temperature']
