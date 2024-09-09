@@ -8,10 +8,8 @@ import streamlit as st
 import joblib
 import numpy as np
 
-# 请确保model.sav的路径与实际路径相匹配
-MODEL_PATH = 'model.pkl'
 # 载入预先训练好的模型
-model =  joblib.load(MODEL_PATH)
+model =  joblib.load('model.pkl')
 # 定义一个函数来处理输入并进行预测
 def predict_properties(input_features):
     T = input_features['Temperature']
